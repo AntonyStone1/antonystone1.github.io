@@ -1,0 +1,431 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.visually-hidden {
+  display: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* headlines*/
+.popular-tours-heading, .blog-heading{
+  font-size: 3em;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* scale animation */
+.tours-item button:hover, .tours_button-next_slide:hover, .price_button:hover, .social-list i:hover, .quick-order_form_btn:hover,
+.blog-nav_button:hover, .nav_list_item:hover, .container_hero_btn:hover, .tours-item:hover
+{
+  transform: scale(1.05);
+  transition: 0.6s;
+}
+
+/* navigation */
+
+.logo {
+  font-size: 1.5em;
+  font-weight: 900;
+  padding: 15px;
+  margin-right: 20px;
+  color: #fff;
+  z-index: 1;
+}
+.main-header nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+.nav_list {
+  display: flex;
+  list-style: none;
+  margin-right: auto;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav_list_item, .nav_tel-number, .nav_user-account, .nav_menu {
+  padding: 20px;
+  z-index: 1;
+}
+
+
+/* hero */
+.container_hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_hero_img {
+  position: relative;
+  top: -150px;
+  width: 100%;
+}
+.container_hero h1 {
+  position: absolute;
+  top: 20%;
+  font-size: 5em;  
+  color: #fff;
+  text-shadow: 1px 1px 3px gray;
+  z-index: 1;
+}
+.container_hero_btn {
+  position: absolute;
+  cursor: pointer;
+  top: 35%;
+  padding: 10px 40px;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 3px gray;
+  color: #fff;
+  border: 2px solid #FFF;
+  background-color: transparent;
+  box-shadow: 1px 1px 3px gray;
+  z-index: 1;
+}
+
+/* climb-tours */
+.climbing-tours {
+  display: flex;
+  justify-content: center;
+}
+.climbing-tours_text-container {  
+  width: 30%;
+}
+.climbing-tours_text-container h2 {
+  font-size: 3em;
+  line-height: 1em;
+  margin-bottom: 20px;
+  width: 130%;
+}
+.climbing-tours_text-container p{
+  line-height: 1.8em;
+  margin-bottom: 20px;
+}
+.climb-tours_img {
+  position: relative;
+  top: -10%;
+  object-fit: contain;
+  margin-left: 5%;
+  z-index: -1;
+}
+
+/* popular-tours */
+
+.popular-tours {
+  display: flex;
+  justify-content: center;
+}
+.tours-item a {
+  font-size: 1.5em;
+  color: black;
+}
+.tours, .tours ul {
+  list-style: none;
+  text-decoration: none;
+}
+.belukha {
+  background: url('../img/Belukha.jpg') 0 0/ 100% 100% no-repeat;
+}
+.elbrus {
+  background: url('../img/elbrus_cut.jpg') 0 0/ 100% 100% no-repeat;
+}
+.kilimanjaro {
+  background: url('../img/kilimanjaro.jpg') 0 0/ 100% 100% no-repeat;
+}
+.tours-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+  width: 400px;
+  height: 350px;
+  margin: 60px 20px 20px;
+  padding-left: 50px;
+  cursor: pointer;
+}
+.tours-item ul {
+  display: flex;
+}
+.tours-item li:not(:last-of-type) {
+  border-right: 1px solid black;
+}
+.tours-item li {
+  font-size: 1.1em;
+  color: #000;
+  padding: 0 15px;
+  margin-bottom: 20px;  
+}
+.tours-item li:first-of-type {
+  padding-left: 0;
+}
+.tours-item p {
+  color: #000;
+  font-size: 1.1em;
+}
+.tours-item p:not(:last-of-type) {
+  position: relative;
+  top: -190px;
+}
+.fa-map-marker-alt {
+  color: rgba(255, 94, 0, 0.973);
+  padding-right: 8px;
+  transform: scale(1.3);
+}
+.tours-item button {
+  position: relative;
+  top: -280px;
+  right: -280px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgb(255, 123, 0);
+  font-size: large;
+  cursor: pointer;
+}
+
+.buttons {
+  position: relative;
+  display: inline-block;
+  right: -90%;
+}
+.tours_button-next_slide {
+  margin: 20px;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Price */
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 650px;
+  background: url('../img/bg_price.jpg') 0 0/cover no-repeat;
+}
+.price h2 {
+  position: relative;
+  color: #fff;
+  font-size: 3em;
+}
+.price p {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  width: 17%;
+  margin: 15px 0 30px 0;
+}
+.price_table {
+  margin: 0 auto;
+  border-spacing: 0;
+}
+
+.price_table td, .price_table th {
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #fff;
+  text-align: left;
+  padding: 20px 50px;
+  border-bottom: 1px solid rgb(134, 134, 134);
+}
+.price_table th {
+  font-weight: 300;
+  color: lightgray;
+}
+.price_button {
+  display: block;
+  font-size: 1.1em;
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+  margin-top: 50px;
+  width: 170px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* blog */
+.blog-heading {
+  margin-bottom: 60px;
+}
+.blog {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 180px;
+}
+.blog-nav {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 35%;
+}
+.blog-nav_date-time, .blog-article_date-time {
+  font-size: 0.9em;
+  color: rgb(167, 167, 167);
+  cursor: none;
+}
+.blog-nav-item {
+  height: 25%;
+  padding: 20px 20px 30px 20px;
+  margin: 10px;
+  border-bottom: 1px solid rgb(7, 26, 40);
+}
+.blog-nav-item p {
+  padding-top: 10px;
+  color: rgb(7, 26, 40);
+}
+.blog-nav-item-active {
+  background-color: rgb(7, 26, 40);
+}
+.blog-nav-item-active p {
+  color: #fff;
+}
+.blog-nav_button {
+  position: absolute;
+  bottom: -10%;
+  width: 35%;
+  height: 50px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: rgb(255, 94, 0);
+  border: none;
+  cursor: pointer;
+}
+.blog-article {
+  width: 60%;
+}
+.blog-article_img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 30px;
+  background: url('../img/human-on-the-mountain.png') 0 -70px/ cover no-repeat;
+}
+.blog-article h3 {
+  padding: 20px 0;
+}
+.blog-article p {
+  line-height: 1.6em;
+  padding: 10px 0;
+}
+
+/* quick-order */
+.quick-order {
+  display: flex;
+  margin-bottom: 150px;
+}
+.quick-order-heading {
+  width: 80%;
+  font-size: 3em;
+  color: #fff;
+}
+.quick-order p {
+  width: 80%;
+  padding: 20px 0;
+  line-height: 1.6em;
+  color: #fff;
+}
+.quick-order_personal-data {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+.quick-order_form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 5%;
+  width: 50%;
+  background-color: rgb(7, 26, 40);
+}
+.quick-order_form {
+  display: flex;
+  flex-direction: column;
+}
+.quick-order_form input {
+  font-size: 1.1em;
+  color: #fff;
+  margin: 20px 0;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+.quick-order_img {
+  width: 50%;
+  background: url('../img/quick-order_img.jpg') 0 0/cover no-repeat;
+}
+.quick-order_form_btn {
+  height: 50px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: rgb(255, 94, 0);
+  border: none;
+  cursor: pointer;
+}
+/* contacts */
+.contacts {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.contacts_our-contacts {
+  width: 500px;
+  margin-left: 5%;
+}
+.contacts_our-contacts ul {
+  list-style: none;
+}
+.contacts_list-item {
+  font-size: 1.2em;
+  padding: 20px 0;
+}
+.contacts_list-item p {
+  padding-bottom: 15px;
+}
+.contacts_list-item a{
+  font-weight: 600;
+  color: #000;
+}
+.social-list {
+  display: flex;
+}
+.social-list i {
+  padding-right: 30px;
+}
+
+/* footer */
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  padding: 0 40px;
+  color: #fff;
+  background-color: rgb(7, 26, 40);
+}
+.main-footer p {
+  font-weight: 300;
+  font-size: 0.8em;
+}

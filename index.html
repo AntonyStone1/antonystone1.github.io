@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+  <title>Mountain tours</title>
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <nav>
+        <div class="logo"><span>MOUNTAIN</span></div>
+        <ul class="nav_list">
+          <li class="nav_list_item"><a href="#">About us</a></li>
+          <li class="nav_list_item"><a href="#">Tours</a></li>
+          <li class="nav_list_item"><a href="#">Tour selection</a></li>
+          <li class="nav_list_item"><a href="#">Blog</a></li>
+          <li class="nav_list_item"><a href="#">Contact</a></li>
+        </ul>
+        <div class="nav_menu">
+          <a class="nav_tel-number" href="tel:88007773325">8 (800) 777-33-25</a>
+          <a class="nav_search" href="#"><i class="fas fa-search"></i></a>
+          <a class="nav_user-account" href="#"><i class="far fa-user"></i></a>
+        </div>
+      </nav>
+    </div>
+    <div class="container_hero">
+      <h1>Everest</h1>
+      <img class="container_hero_img" src="img/GettyImages-478627080.jpg" alt="mount everest on the background of a sunny sky">
+      <button class="container_hero_btn" type="submit">Details</button>  
+    </div>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Главная страница туристического клуба «Mountain»</h1>
+    <div class="container">
+      <section class="climbing-tours">
+        <div class="climbing-tours_text-container">
+          <h2>Tours with climbing to the top of the world</h2>
+          <p>We are experts in organizing mountaineering tours for experienced climbers 
+            and beginners. You can entrust us with the complete organization of your 
+            adventure from A to Z and be confident in the quality and safety of the ascent.</p>
+          <p>Our company provides everything you need: advice on choosing a tour, flight, 
+            visa, booking accommodation, meals, equipment required for climbing, experienced 
+            guides, full support.</p>
+        </div>
+        <img class="climb-tours_img" src="img/world-map.png" alt="world map with marks">
+      </section>
+    </div>
+
+    <div class="container">
+      <h2 class="popular-tours-heading">Popular tours</h2>
+      <section class="popular-tours">
+        <ul class="tours">
+          <li class="tours-item belukha">
+            <h3><a href="card.html">Belukha</a></h3>
+            <p><i class="fas fa-map-marker-alt"></i> Russia</p>
+            <ul>
+              <li>4506 m</li>
+              <li>12 days</li>
+              <li>from 45000 ₽</li>
+            </ul>
+            <p class="tours_difficulty-level">Average level</p>
+            <button class="tours_button" type="button"><i class="far fa-bookmark"></i><span class="visually-hidden">Add to favorites</span></button>
+          </li>
+        </ul>
+        <ul class="tours">
+          <li class="tours-item elbrus">
+            <h3><a href="card.html">Elbrus</a></h3>
+            <p><i class="fas fa-map-marker-alt"></i> Russia</p>
+            <ul>
+              <li>5642 m</li>
+              <li>10 days</li>
+              <li>from 25000 ₽</li>
+            </ul>
+            <p class="tours_difficulty-level">Average level</p>
+            <button class="tours_button" type="button"><i class="far fa-bookmark"></i><span class="visually-hidden">Add to favorites</span></button>
+          </li>
+        </ul>
+        <ul class="tours">
+          <li class="tours-item kilimanjaro">
+            <h3><a href="card.html">Kilimanjaro</a></h3>
+            <p><i class="fas fa-map-marker-alt"></i> Tanzania</p>
+            <ul>
+              <li>4506 m</li>
+              <li>12 days</li>
+              <li>from 45000 ₽</li>
+            </ul>
+            <p class="tours_difficulty-level">Easy level</p>
+            <button class="tours_button-favorites" type="button"><i class="far fa-bookmark"></i><span class="visually-hidden">Add to favorites</span></button>
+          </li>
+        </ul>        
+      </section>
+      <div class="buttons">
+        <button class="tours_button-next_slide" type="button"><i class="fas fa-arrow-left"></i></button>
+        <button class="tours_button-next_slide" type="button"><i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <section class="price">
+      <h2>Russia</h2>
+      <p>More than 15 tours for climbers of all levels</p>
+      <table class="price_table">
+        <tr>
+          <th>Peak</th>
+          <th>Height</th>
+          <th>Level</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Elbrus</td>
+          <td>5642 m</td>
+          <td>Average</td>
+          <td>from 25 000 ₽</td>
+        </tr>
+        <tr>
+          <td>Kazbek</td>
+          <td>5033 m</td>
+          <td>Difficult</td>
+          <td>from 30 000 ₽</td>
+        </tr>
+        <tr>
+          <td>Belukha</td>
+          <td>4506 m</td>
+          <td>Simple</td>
+          <td>from 20 000 ₽</td>
+        </tr>
+        <tr>
+          <td>Dykhtau</td>
+          <td>5204 m</td>
+          <td>Average</td>
+          <td>from 40 000 ₽</td>
+        </tr>
+      </table>
+      <button class="price_button">See all</button>
+    </section>
+
+    <div class="container">
+      <h2 class="blog-heading">Blog</h2>
+      <section class="blog">
+          <ul class="blog-nav">
+            <li class="blog-nav-item blog-nav-item-active">
+              <a href="#">
+                <time class="blog-nav_date-time" datetime="2020-01-15">15 junuary, 2020</time>
+                <p>How to prepare for the first ascent to the 
+                  top of the mountain</p>
+              </a>
+            </li>
+            <li class="blog-nav-item">
+              <a href="#">
+                <time class="blog-nav_date-time" datetime="2020-01-10">10 junuary, 2020</time>
+                <p>Festival Alpika Freeski Alpindustria Fest 
+                  Krasnaya Polyana February 13-16</p>
+              </a>
+            </li>
+            <li class="blog-nav-item">
+              <a href="#">
+                <time class="blog-nav_date-time" datetime="2019-12-20">20 december, 2020</time>
+                <p>Peculiarities of mountaineering in Kamchatka. 
+                  All about Klyuchevaya Sopka</p>
+              </a>
+            </li>
+            <li class="blog-nav-item">
+              <a href="#">
+                <time class="blog-nav_date-time" datetime="2019-12-15">15 december, 2020</time>
+                <p>What happens to a person at an altitude of over 3000 meters?</p>
+              </a>
+            </li>
+            <li class="blog-nav-item">
+              <a href="#">
+                <time class="blog-nav_date-time" datetime="2019-12-15">15 december, 2020</time>
+                <p>What happens to a person at an altitude of over 3000 meters?</p>
+              </a>
+            </li>
+          </ul>
+          <button class="blog-nav_button">Read all news</button>
+          <article class="blog-article">
+            <div class="blog-article_img"></div>
+            <time class="blog-article_date-time" datetime="2020-01-15">15 junuary, 2020</time>
+            <h3>How to prepare for your first ascent to the top of the mountain</h3>
+            <p>Before you go to conquer the top of the mountain, you need not only to 
+              put in order your physical form, but also to train endurance, respiratory 
+              and cardiovascular systems. They account for the maximum load at height. 
+              Therefore, due to insufficient preparation, you may get off halfway. 
+              To prevent this from happening, do swimming, jogging, cycling, and cardio training.</p>
+            <p>How should training be carried out? First and foremost, training should be 
+              continuous, effective and intense. In addition, the load should gradually 
+              increase. In the case of running, be sure to do this with the heart rate in mind. 
+              A well-planned run will not only allow you to lose weight, but also strengthen 
+              the heart muscle. By running at a high heart rate, you will allow your body 
+              to get used to the lack of oxygen - something that you will definitely 
+              encounter in the mountains. To build fitness and endurance, also run uphill 
+              or climb stairs at a brisk pace. And don't forget to take a rest one week 
+              before your trip!</p>
+          </article>
+      </section>
+    </div>
+
+    <section class="quick-order">
+      <div class="quick-order_form-container">
+        <h2 class="quick-order-heading">Need help choosing a tour?</h2>
+        <p>Fill out the form, our manager will contact you shortly and select a suitable tour</p>
+        <form class="quick-order_form" action="#" method="POST">
+          <input type="text" id="quick-order-form-name" name="quick-order-form-name" placeholder="Имя&#9913;" required>
+            <label class="visually-hidden" for="quick-order-form-name">Имя</label>
+          <input type="tel" id="quick-order-form-tel" name="quick-order-form-tel" placeholder="Телефон&#9913;" required >
+            <label class="visually-hidden" for="quick-order-form-tel">Телефон</label>
+          <input type="email" id="quick-order-form-email" name="quick-order-form-email" placeholder="E-mail">
+            <label class="visually-hidden" for="quick-order-form-email">E-mail</label>
+          <button class="quick-order_form_btn" type="submit">Send</button>
+        </form>
+        <p class="quick-order_personal-data">By clicking on the button, you agree to the terms and conditions for the processing of personal data</p>
+      </div>
+      <div class="quick-order_img"></div>
+    </section>
+
+    <div class="container">
+      <section class="contacts">
+        <div id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7546570115423!2d30.319940416503695!3d59.93621316925588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631057e07c397%3A0xa67077b92b1231bc!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDc4LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1614524496909!5m2!1sru!2sua" 
+          width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="contacts_our-contacts">
+          <h2>Contacts</h2>
+          <ul class="contacts_list">
+            <li class="contacts_list-item adress">
+              <p>Adress:</p>
+              <p>St. Petersburg, Bolshaya Konyushennaya street, 78</p>
+            </li>
+            <li class="contacts_list-item phone-number">
+              <p>Phone number:</p>
+              <a href="tel:88007773325">8 (800) 777-33-25 </a>
+            </li>
+            <li class="contacts_list-item e-mail">
+              <p>E-mail:</p>
+              <a href="mailto:info@mountain.ru">info@mountain.ru</a>
+            </li>
+            <li class="contacts_list-item social-media">
+              <p>Social media:</p>
+              <ul class="social-list">
+                <li class="social-list-item">
+                    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="social-list-item">
+                    <a href="https://Instagra.com"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="social-list-item">
+                    <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="main-footer">
+    <p>Maroon &copy; 2020 All rights reserver</p>
+    <div class="logo"><span>MOUNTAIN</span></div>
+    <p>Privacy policy</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
