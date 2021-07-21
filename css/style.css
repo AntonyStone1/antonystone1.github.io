@@ -30,8 +30,8 @@ body {
 .tours-item button:hover, .tours_button-next_slide:hover, .price_button:hover, .social-list i:hover, .quick-order_form_btn:hover,
 .blog-nav_button:hover, .nav_list_item:hover, .container_hero_btn:hover, .tours-item:hover
 {
-  transform: scale(1.05);
-  transition: 0.6s;
+  transform: scale(1.03);  transition: all ease 0.5s;
+  cursor: pointer;
 }
 
 /* navigation */
@@ -131,6 +131,8 @@ header a {
 .popular-tours {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  transition: 0.5s;
 }
 .tours-item a {
   font-size: 1.5em;
@@ -322,7 +324,9 @@ header a {
   width: 100%;
   height: 200px;
   margin-bottom: 30px;
-  background: url('../img/human-on-the-mountain.png') 0 -70px/ cover no-repeat;
+  background: url('../img/human-on-the-mountain.png');
+  background-size: cover;
+  background-position: center;
 }
 .blog-article h3 {
   padding: 20px 0;
@@ -336,6 +340,7 @@ header a {
 .quick-order {
   display: flex;
   margin-bottom: 150px;
+  max-width: 100%;
 }
 .quick-order-heading {
   width: 80%;
@@ -363,6 +368,7 @@ header a {
   display: flex;
   flex-direction: column;
 }
+
 .quick-order_form input {
   font-size: 1.1em;
   color: #fff;
@@ -374,7 +380,9 @@ header a {
 }
 .quick-order_img {
   width: 50%;
-  background: url('../img/quick-order_img.jpg') 0 0/cover no-repeat;
+  background: url('../img/quick-order_img.jpg');
+  background-size: cover;
+  background-position: center;
 }
 .quick-order_form_btn {
   height: 50px;
@@ -384,6 +392,8 @@ header a {
   border: none;
   cursor: pointer;
 }
+
+
 /* contacts */
 .contacts {
   display: flex;
@@ -415,6 +425,16 @@ header a {
   padding-right: 30px;
 }
 
+.map {
+  display: flex;
+}
+
+iframe {
+  height: 500px;
+  width: 600px;
+  border: 0;
+}
+
 /* footer */
 .main-footer {
   display: flex;
@@ -428,4 +448,16 @@ header a {
 .main-footer p {
   font-weight: 300;
   font-size: 0.8em;
+}
+
+
+
+
+@media (min-width: 1920px) {
+
+  .quick-order_form-container {
+    padding: 5% 15%;
+  }
+
+
 }
